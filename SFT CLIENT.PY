@@ -16,7 +16,7 @@ class SecureFileClient:
         public_key_data = self.client.recv(2048)
         self.server_public_key = RSA.import_key(public_key_data)
 
-        print(f"✅ Connected to server")
+        print(f"Connected to server")
         print(f"Server Public Key received")
 
     def encrypt_file(self, filename):

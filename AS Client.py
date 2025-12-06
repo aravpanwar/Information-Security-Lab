@@ -8,7 +8,7 @@ class AuthClient:
         self.client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.client.connect((host, port))
         self.token = None
-        print(f"✅ Connected to auth server")
+        print(f"Connected to auth server")
 
     def send_request(self, action, **kwargs):
         request = {'action': action, **kwargs}
